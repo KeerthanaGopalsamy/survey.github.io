@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <container id="container">
+      <main id="main">
+        <header id="head-id">
+          <h1 id="title">personal favourites survey form</h1>
+          <p id="description">choose your favourites</p>
+        </header>
+        <div id="back">
+          <form id="survey-form">
+            <label for="name" id="name-label">name:</label><br />
+            <input
+              type="text"
+              id="name"
+              class="h"
+              name="name"
+              placeholder="enter your name"
+              required
+            /><br />
+            <label for="email" id="email-label">email:</label><br />
+            <input
+              type="email"
+              id="email"
+              class="h"
+              name="email"
+              placeholder="enter your email"
+              required
+            /><br />
+            <label for="age" id="number-label"
+              >age<span> (optional):</span></label
+            ><br />
+            <input
+              type="number"
+              id="number"
+              class="h"
+              name="age"
+              placeholder=" age "
+              min="10"
+              max="99"
+            /><br />
+            <label for="cars">choose a favourite car:</label>
+            <br />
+            <select id="dropdown" class="h">
+              <option disabled selected value>Select your favourite</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option></select
+            ><br />
+
+            <label for="dress" name="radio-group"
+              >Please select your favorite type of dress:</label
+            ><br />
+            <div id="radio-group">
+              <input type="radio" id="kurthi" name="fav_dress" value="kurthi" />
+                <label for="kurthi">kurthi</label>
+              <input type="radio" id="salwar" name="fav_dress" value="salwar" />
+                <label for="salwar">salwar</label>
+              <input type="radio" id="saree" name="fav_dress" value="saree" />
+                <label for="saree">saree</label>
+            </div>
+            <br />
+            <label for="drink">Choose your favourite drink:</label>
+            <br />
+
+            <select id="dropdown" class="h">
+              <option disabled selected value>Select your favourite</option>
+              <option value="lemon">lemon</option>
+              <option value="orange">orange</option>
+              <option value="apple">apple</option>
+              <option value="milkshake">milkshake</option></select
+            ><br />
+            <label for="food">Choose your favourite foods:</label>
+            <br />
+            <div id="checkbox">
+              <input type="checkbox" id="food1" name="food1" value="biryani" />
+              <label for="food1"> Biryani</label>
+              <input type="checkbox" id="food2" name="food2" value="shawarma" />
+              <label for="food2"> shawarma</label>
+              <input
+                type="checkbox"
+                id="food3"
+                name="food3"
+                value="paneer butter masala"
+              />
+              <label for="food3">paneer butter masala</label>
+            </div>
+            <br />
+
+            <label for="comments">any comments and suggestions?</label><br />
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="enter your comments"
+              class="h"
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" id="submit" class="h" />
+          </form>
+        </div>
+      </main>
+    </container>
+  </body>
+</html>
